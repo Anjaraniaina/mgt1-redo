@@ -1,0 +1,38 @@
+# initialiser le projet
+git init
+
+# créer le fichier profile et ajouter nom et prénom
+nano profile.txt
+
+# ajouter les fichiers dans le dépot local
+git add .
+
+# sauvegarder les changements
+git commit -m "feat: made profile"
+
+# créer, ajouter et sauvegarder readme.md
+nano readme.md
+git add .
+git commit -m "feat: made readme"
+
+# envoyer dans le repo distant
+git remote add origin https://github.com/Anjaraniaina/mgt1-redo.git
+git push -u origin main
+
+# changer le profile, ajouter sauvegarder puis envoyer sur le dépôt distant
+nano profile.txt
+git add .
+git commit -m "fix(profile): more info about profile"
+git push
+
+# créer theory.txt ajouter, sauvegarder puis envoyer sur le dépôt distant
+nano theory.txt 
+git add .
+git commit -m "feat: made theory.txt"
+git push
+
+# créer theory.txt ajouter, sauvegarder puis envoyer sur le dépôt distant
+nano commands.txt 
+git add .
+git commit -m "feat: made commands.txt"
+git push
